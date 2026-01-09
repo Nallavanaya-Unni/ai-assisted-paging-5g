@@ -28,4 +28,11 @@ python training/train_lstm.py
 4. Evaluate baselines
 python training/baselines.py
 
+## Mapping to 3GPP NWDAF (TS 23.288)
+
+In a real 5G system, the proposed mobility prediction function can be implemented as part of the Network Data Analytics Function (NWDAF). Mobility-related data such as serving cell history, handover frequency, and radio measurements are collected from AMF and RAN nodes.
+
+The NWDAF processes this data to predict the UE’s next serving cell and exposes the analytics to the AMF. The AMF can then apply sequential paging, first paging the predicted cell before falling back to TA-wide paging if needed.
+
+This approach aligns with ongoing 3GPP discussions on analytics-driven mobility management and AI-native core networks.
 
